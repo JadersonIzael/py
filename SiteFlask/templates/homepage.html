@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Site com Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage.css')}}">
+
+</head>
+<body>
+
+    <header>
+        <h1>Site com Flask</h1>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="contato">Contato</a></li>
+                <li><a href="usuarios/{{nome_usuario}}">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <p>{{cotacao}}</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Site com Flask</p>
+    </footer>
+
+</body>
+</html>

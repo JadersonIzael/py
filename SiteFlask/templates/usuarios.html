@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage.css')}}">
+
+</head>
+<body>
+
+    <header>
+        <h1>Meu Perfil</h1>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="contato">Contato</a></li>
+                <li><a href="usuarios/{{nome_usuario}}">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Sobre Mim</h2>
+        <p>Olá, meu nome é {{nome_usuario}}. Sou um usuário deste site e gostaria de compartilhar um pouco sobre mim. Este é um parágrafo de exemplo que descreve minha história, interesses ou qualquer outra informação relevante sobre mim.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Site com Flask</p>
+    </footer>
+
+</body>
+</html>

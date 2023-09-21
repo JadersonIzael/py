@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Site com Flask - Contato</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage.css')}}">
+
+</head>
+<body>
+
+    <header>
+        <h1>Site com Flask</h1>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="contato">Contato</a></li>
+                <li><a href="usuarios/{{nome_usuario}}">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através do seguinte formulário:</p>
+        <!-- Adicione aqui o código do formulário de contato, se desejar. -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Site com Flask</p>
+    </footer>
+
+</body>
+</html>

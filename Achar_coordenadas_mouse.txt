@@ -1,0 +1,6 @@
+para achar coordenadas do mouse, abra o powershell e digite isso:
+
+python
+
+from mouseinfo import mouseInfo
+mouseInfo()
