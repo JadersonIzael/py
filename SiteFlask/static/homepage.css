@@ -6,18 +6,6 @@ body {
     background-color: #ffffff; /* Fundo branco */
 }
 
-/* Estilo para o cabeçalho */
-header {
-    background-color: #44749d; /* Azul escuro */
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Estilo para o título no cabeçalho */
-header h1 {
-    margin: 0;
-}
 
 /* Estilo para a barra de navegação */
 nav ul {
@@ -39,14 +27,6 @@ nav ul li a {
 /* Estilo para o conteúdo principal */
 main {
     padding: 20px;
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: #c6d4e1; /* Azul claro */
-    color: #fff;
-    text-align: center;
-    padding: 10px;
 }
 
 
@@ -91,7 +71,6 @@ footer {
     text-decoration: none;
     color: #333; /* Cor dos itens do menu */
 }
-
 /* Estilo para o cabeçalho */
 header {
     background-color: #44749d; /* Azul escuro */
@@ -139,6 +118,16 @@ form {
     text-align: left; /* Alinha o texto à esquerda */
 }
 
+.btc {
+    background-image: url('btc.png');
+    background-size: cover; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 100px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
+  }
+  
+
 /* Estilo para as labels */
 label {
     display: block; /* Coloca cada label em uma nova linha */
@@ -169,4 +158,61 @@ input[type="submit"] {
 /* Estilo para o botão de cadastrar quando hover */
 input[type="submit"]:hover {
     background-color: #32506d; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+.imagem-cima {
+    position: absolute;
+    top: calc(0% + 105px); 
+    left: -5%;
+    width: 100%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    animation: mover 5s linear infinite;
+}
+@keyframes mover {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(-25%, -5%);
+    }
+    50% {
+        transform: translate(-50%, -10%);
+    }
+    75% {
+        transform: translate(-75%, -5%);
+    }
+    100% {
+        transform: translate(-100%, 0%);
+    }
+}
+
+
+.imagem-baixo {
+    position: absolute;
+    top: calc(0% + 105px); 
+    left: -5%;
+    width: 100%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    animation: mover 10s linear infinite;
+}
+@keyframes mover {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(-25%, 0%);
+    }
+    50% {
+        transform: translate(-50%, 0%);
+    }
+    75% {
+        transform: translate(-75%, 0%);
+    }
+    100% {
+        transform: translate(-100%, 0%);
+    }
 }

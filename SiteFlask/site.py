@@ -21,15 +21,20 @@ def contato():
 def cadastro():
     return render_template("cadastroUsuarios.html")
 
-@app.route("/usuarios/<nome_usuario>")
+@app.route("/usuarios/<nome_usuario>", methods=["POST"])
 def usuarios(nome_usuario):
     return render_template("usuarios.html", nome_usuario = nome_usuario)
 
-@app.route("/cotacao/<cotacao>")
-def cotacao(cotacao):
+@app.route("/<cotacao>", methods=["POST"])
+def retorno_cotacao(cotacao):
     moeda = pegar_cotacao(cotacao)
     cotacao = f"O valor do {cotacao} hoje é de R$: {moeda}"
     return render_template("cotacao.html", cotacao = cotacao)
+
+@app.route("/cotacaoBase")
+def cotacao_base():
+    return render_template("cotacaoBase.html")
+
 
 def pegar_cotacao(moeda):
     link = f"https://economia.awesomeapi.com.br/last/{moeda}-BRL"
